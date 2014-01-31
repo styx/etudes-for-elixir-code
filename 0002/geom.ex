@@ -1,13 +1,18 @@
 defmodule Geom do
 
   @moduledoc """
-  Functions for shapes areas
+  Functions for geometric shapes areas.
   """
+
   @vsn 0.1
 
-  @doc "Find out area by width and length"
-  @spec area(number // 1, number // 1) :: number
-  def area(a, b) do
+  @doc """
+  Calculates the area of a rectangle, given the length and width.
+  Returns the product of its arguments. The default value for
+  both arguments is 1.
+  """
+  @spec area(number(), number()) :: number()
+  def area(a // 1, b // 1) do
     a * b
   end
 

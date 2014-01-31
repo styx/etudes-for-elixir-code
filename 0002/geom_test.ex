@@ -10,8 +10,16 @@ defmodule GeomTest do
     assert Geom.area(3,4) == 12
   end
 
-  test "accepts Integers" do
+  test "accepts Floats" do
     assert Geom.area(3.0,4.0) == 12
+  end
+
+  test "has defaults" do
+    assert Geom.area == 1
+  end
+
+  test "has defaults" do
+    assert Geom.area(7) == 7
   end
 
 end

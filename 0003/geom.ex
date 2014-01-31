@@ -21,7 +21,7 @@ defmodule Geom do
     iex(6)> Geom.area(:triangle, 3, -4)
     ** (FunctionClauseError) no function clause matching in Geom.area/3
   """
-  @spec area(:atom, number, number) :: number
+  @spec area(atom, number, number) :: number
   def area(:rectangle, a, b) when a >= 0 and b >= 0 do
     a * b
   end

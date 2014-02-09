@@ -12,7 +12,7 @@ defmodule Geom do
   both arguments is 1.
   """
   @spec area(number(), number()) :: number()
-  def area(a // 1, b // 1) do
+  def area(a \\ 1, b \\ 1) do
     a * b
   end
 
